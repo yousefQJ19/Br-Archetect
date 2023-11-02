@@ -1,243 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap'); /* font-family: 'Rubik', sans-serif */
 
-@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap');    /*font-family: 'Rubik', sans-serif*/
-    body{
-        font-family:  'Rubik', sans-serif; 
-    }
-    *{
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
-    #Header{
-        position: relative;
-    }
-    #Header img{
-        width:100%;
-        position: relative;
+body {
+    font-family: 'Rubik', sans-serif;
+}
 
-    }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-    .NavBar{
-        z-index: 1000;
-        position: sticky;
-        top:5px;
-        
-        position: sticky;
-        background-color: white;
-        width:100%;
-        height:50px;
-        box-shadow:0 1px 10px #000000 ;
-        border-radius: 2px;
-        -webkit-border-radius: 2px;
-        -moz-border-radius: 2px;
-        -ms-border-radius: 2px;
-        -o-border-radius: 2px;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
+.header {
+    position: relative;
+}
 
-    }
+.header img {
+    width: 100%;
+    position: relative;
+}
 
-    .NavBar ol{
-        width:20%;
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-end;
-        justify-content: space-between;
-        margin-top: 12px;
-        margin-right: 20px;
-        list-style: none;
+.navBar {
+    z-index: 2;
+    position: sticky;
+    top: 5px;
+    background-color: white;
+    width: 100%;
+    height: 50px;
+    box-shadow: 0 1px 10px #000000;
+    border-radius: 2px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
 
-    }
-    .NavBar ol li{
-        
-        font-size: large;
+.navBar ol {
+    width: 20%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    justify-content: space-between;
+    margin-top: 12px;
+    margin-right: 20px;
+    list-style: none;
+}
 
-    }
-    a{
-        text-decoration: none;
-        color: #000000;
-    }
+.navBar ol li {
+    font-size: large;
+}
 
-    .NavBar p{
-        margin-top: 12px;
-        margin-left: 20px;
-        
-    }
-    .NavBar p span{
-        font-weight: bolder;
-    }
+a {
+    text-decoration: none;
+    color: #000000;
+}
 
-    .Text-Photo{
-        
-        font-size: 40px;
-        position: absolute;
-        top:48%;
-        left: 40%;
-    }
-    .Text-Photo span{
-        color: white;
-        background-color: #000000;
-        padding: 5px 15px 5px 10px;
-        opacity: .75;
-    }
-    .Projectsheder{
-        width: 95%;
-        margin: 1.3rem auto;
+.navBar p {
+    margin-top: 12px;
+    margin-left: 20px;
+}
 
-    }
-    .Projectsheder p{ 
-        
-        font-size: 20px;
-        
-        font-weight: 200;
-        
-    }
-    .ProjectsList{
-        margin-top: 30px;
-        display: grid;
-        grid-template-columns:repeat(4,1fr);
-        grid-template-rows: repeat(2,1fr);
-        column-gap: 1.3rem;
-        row-gap: 8px;
-    }
-    .mobile-apper span{
-        display: none;
-        color: white;
-        background-color: #000000;
-        padding: 5px 15px 5px 10px;
-        opacity: .75;
-    }
-    .project img{
-        position: relative;
-        width:100%;
-    }
-    .project p{
-        background-color: #000000;
-        z-index: 10;
-        position: absolute;
-        color: white;
-        padding: 10px;
-        font-size: small;
-        text-align: center;
-    
-    }
-    .About {
-        width: 95%;
-        margin: 1rem auto;
-    }
-    
-    .AboutHeader{
-        margin: 2rem 0;
-        font-weight: 200;
-        font-size: 20px;
-    }
+.navBar p span {
+    font-weight: bolder;
+}
 
+.textPhoto {
+    font-size: 40px;
+    position: absolute;
+    top: 48%;
+    left: 40%;
+}
 
-    .AboutList{
-        width:100%;
-        display: flex;
-        justify-content: space-between;
-        gap:1.5rem;
-        margin:3rem 0;
-    }
-    /* .AboutListElement{
-        width:23%;
-    } */
-    .AboutListElement img{
-        width:100%;
-    }
-    .AboutListElementName{
-        margin:10px 0;
-    }
-    .AboutListElementPosition{
-        font-size: small;
-        font-weight: lighter;
-        margin:18px 0;
-    }
-    .AboutListElementParagraph{
-        font-size: small;
-        font-weight: 400;
-    }
-    .AboutListElementButton{
-        width: 100%;
-        padding:.5rem 0;
-        margin-top: 10px;
-        text-align: center;
-        background-color: rgb(242, 240, 240);
-        font-weight: 400;
-    }
-    .Contact{
-        width:95%;
-        margin: 1.3rem auto;
-    }
-    .ContactTitle {
-    
-        font-size: 20px;
-        margin:1.5rem 0;
+.textPhoto span {
+    color: white;
+    background-color: #000000;
+    padding: 5px 15px 5px 10px;
+    opacity: 0.75;
+}
 
-    }
-    .contact-paragraph{
-        font-size: small;
-    }
-    .ContactList{
-        display: flex;
-        flex-direction: column;
-    }
-    .ContactList input{
-        height: 30px;
-        padding: 10px;
-        margin-top: 10px;
-        border:1px solid rgb(215, 212, 212);
-        -webkit-border-radius: 4px;
-        -moz-border-radius: 4px;
-        -ms-border-radius: 4px;
-        -o-border-radius: 4px;
+.projectsHeder {
+    width: 95%;
+    margin: 1.3rem auto;
+}
+
+.projectsHeder p {
+    font-size: 20px;
+    font-weight: 200;
+}
+
+.projectsList {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    column-gap: 1.3rem;
+    row-gap: 8px;
+}
+
+.mobileApper span {
+    display: none;
+    color: white;
+    background-color: #000000;
+    padding: 5px 15px 5px 10px;
+    opacity: 0.75;
+}
+
+.project img {
+    position: relative;
+    width: 100%;
+}
+
+.project p {
+    background-color: #000000;
+    z-index: 1;
+    position: absolute;
+    color: white;
+    padding: 10px;
+    font-size: small;
+    text-align: center;
+}
+
+.about {
+    width: 95%;
+    margin: 1rem auto;
+}
+
+.aboutHeader {
+    margin: 2rem 0;
+    font-weight: 200;
+    font-size: 20px;
+}
+
+.aboutList {
+    width: 100%;
+    display: flex;
+    justify-content: space between;
+    gap: 1.5rem;
+    margin: 3rem 0;
+}
+
+.aboutListElement img {
+    width: 100%;
+}
+
+.aboutListElementName {
+    margin: 10px 0;
+}
+
+.aboutListElementPosition {
+    font-size: small;
+    font-weight: lighter;
+    margin: 18px 0;
+}
+
+.aboutListElementParagraph {
+    font-size: small;
+    font-weight: 400;
+}
+
+.aboutListElementButton {
+    width: 100%;
+    padding: 0.5rem 0;
+    margin-top: 10px;
+    text-align: center;
+    background-color: rgb(242, 240, 240);
+    font-weight: 400;
+}
+
+.contact {
+    width: 95%;
+    margin: 1.3rem auto;
+}
+
+.contactTitle {
+    font-size: 20px;
+    margin: 1.5rem 0;
+}
+
+.contactParagraph {
+    font-size: small;
+}
+
+.contactList {
+    display: flex;
+    flex-direction: column;
+}
+
+.contactList input {
+    height: 30px;
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid rgb(215, 212, 212);
 }
 
 @media (max-width: 780px) {
-    .AboutList{
+    .aboutList {
         display: grid;
-        grid-template-columns: repeat(2,1fr); 
-    }  
-    .ProjectsList{
-        grid-template-columns: repeat(2,1fr);
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .projectsList {
+        grid-template-columns: repeat(2, 1fr);
         column-gap: 20px;
         row-gap: 10px;
-
-    }
-    .project img{
-        width:100%;
     }
 
+    .project img {
+        width: 100%;
+    }
 }
 
 @media (max-width: 480px) {
-    .Text-Photo {
+    .textPhoto {
         display: none;
     }
-    .mobile-apper{
+
+    .mobileApper {
         font-size: 40px;
         position: absolute;
-        top:48%;
+        top: 48%;
         left: 40%;
     }
-    .mobile-apper span{
+
+    .mobileApper span {
         display: block;
         position: absolute;
     }
-    .NavBar p span{
+
+    .navBar p span {
         display: block;
     }
-    .ProjectsList{
-        grid-template-columns: repeat(1,1fr);
-        
 
+    .projectsList {
+        grid-template-columns: repeat(1, 1fr);
     }
-    .AboutList{
+
+    .aboutList {
         display: grid;
-        grid-template-columns: repeat(1,1fr);
-
-    }  
-
+        grid-template-columns: repeat(1, 1fr);
+    }
 }
