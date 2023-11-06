@@ -12,36 +12,36 @@ body {
 
 .header{
     height:600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-image: url(./assets/images/5.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    top:0;
 }
 
 .navBar {
     position: fixed;
-    top: 0px;
     z-index: 3;
-    background-color: white;
-    width: 100%;
-    height: 50px;
-    box-shadow: 0 1px 10px #000000;
+    top: 0px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
+    height: 50px;
+    background-color: white;
+    box-shadow: 0 1px 10px #000000;
+    
 }
 
 .navBar ol{
     display: flex;
     justify-content: space-around;
-    list-style: none;
     gap: 10px;
     padding: 30px;
+    list-style: none;
 }
 
 .navBar ol li,a{
@@ -51,8 +51,8 @@ body {
 
 .navBar p {
     display: flex;
-    font-size: 20px;
     padding: 30px;
+    font-size: 20px;
 }
 
 .navBar p span {
@@ -64,13 +64,13 @@ body {
 }
 
 .textPhoto span {
+    opacity: 0.75; 
+    padding: 5px 15px 5px 10px; 
     color: white;
     background-color: #000000;
-    padding: 5px 15px 5px 10px; 
-    opacity: 0.75; 
 }
 
-#projectsHeader {
+.projectsHeader {
     width: 100%;
     padding: 20px;
 }
@@ -81,20 +81,19 @@ body {
 }
 
 .projectsList {
-    margin-top: 30px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     column-gap: 20px;
     row-gap: 8px;
-
+    margin-top: 30px;
 }
 
 .mobileApper span {
     display: none;
+    opacity: 0.75;
+    padding: 5px 15px 5px 10px;
     color: white;
     background-color: #000000;
-    padding: 5px 15px 5px 10px;
-    opacity: 0.75;
 }
 
 
@@ -103,15 +102,15 @@ body {
 }
 
 .project p {
-    background-color: #000000;
     position: absolute;
-    color: white;
     padding: 10px;
+    background-color: #000000;
+    color: white;
     font-size: 15px;
     text-align: center;
 }
 
-#about {
+.about {
     width: 100%;
     padding: 20px;
 }
@@ -125,8 +124,9 @@ body {
 .aboutList {
     display: flex;
     justify-content: space-between;
-    gap: 20px;
     padding-top: 10px;
+    gap: 20px;
+    
 }
 
 .aboutListElement img {
@@ -138,9 +138,9 @@ body {
 }
 
 .aboutListElementPosition {
+    margin: 18px 0;
     font-size: 12px;
     font-weight: lighter;
-    margin: 18px 0;
 }
 
 .aboutListElementParagraph {
@@ -149,22 +149,22 @@ body {
 }
 
 .aboutListElementButton {
+    margin-top: 10px;
     width: 100%;
     padding: 8px 0;
-    margin-top: 10px;
     text-align: center;
     background-color: rgb(242, 240, 240);
     font-weight: 400;
 }
 
-#contact {
+.contact {
     width: 100%;
     padding: 20px;
 }
 
 .contactTitle {
-    font-size: 20px;
     margin: 24px 0;
+    font-size: 20px;
 }
 
 .contactParagraph {
@@ -177,10 +177,10 @@ body {
 }
 
 .contactList input {
-    height: 30px;
-    padding: 10px;
     margin-top: 10px;
     border: 1px solid rgb(215, 212, 212);
+    height: 30px;
+    padding: 10px;
 }
 
 @media (max-width: 780px) {
@@ -208,15 +208,15 @@ body {
     }
 
     .mobileApper {
-        font-size: 40px;
         position: absolute;
         top: 48%;
         left: 40%;
+        font-size: 40px;
     }
 
     .mobileApper span {
-        display: block;
         position: absolute;
+        display: block;
     }
 
     .navBar p span {
@@ -224,11 +224,11 @@ body {
     }
 
     .projectsList {
-        grid-template-columns: repeat(1, 1fr);
+        grid-template-columns: 1fr;
     }
 
     .aboutList {
         display: grid;
-        grid-template-columns: repeat(1, 1fr);
+        grid-template-columns: 1fr;
     }
 }
