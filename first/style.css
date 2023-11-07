@@ -26,7 +26,6 @@ body {
     z-index: 3;
     top: 0px;
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
     align-items: center;
     width: 100%;
