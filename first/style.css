@@ -11,10 +11,10 @@ body {
 }
 
 .header{
-    height:600px;
     display: flex;
     align-items: center;
     justify-content: center;
+    height: 600px;
     background-image: url(./assets/images/5.jpg);
     background-repeat: no-repeat;
     background-size: cover;
