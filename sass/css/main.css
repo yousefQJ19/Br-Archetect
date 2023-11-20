@@ -19,9 +19,9 @@ nav div {
   padding-left: 20px;
 }
 nav div span {
+  padding: 5px;
   font-weight: 1000;
   font-size: 20;
-  padding: 5px;
 }
 nav ul {
   display: flex;
@@ -36,13 +36,13 @@ nav ul li a {
   color: #000000;
 }
 
-header {
+.header {
   position: relative;
   width: 100%;
   height: 700px;
   background: url(/assets/5.jpg) no-repeat center/cover;
 }
-header div {
+.header__logo {
   position: absolute;
   top: 50%;
   left: 45%;
@@ -50,7 +50,7 @@ header div {
   align-items: center;
   justify-content: space-between;
 }
-header div span {
+.header__logo span {
   opacity: 0.6;
   padding: 15px;
   padding-right: 20px;
@@ -58,7 +58,7 @@ header div span {
   color: white;
   font-size: 20px;
 }
-header div p {
+.header__logo p {
   margin-left: 5px;
   font-size: 20px;
   font-weight: 1000;
@@ -68,30 +68,30 @@ header div p {
   width: 100%;
   padding: 20px;
 }
-.projectsMenu p {
+.projectsMenu__projectsHeader {
+  padding: 40px 0;
   font-size: 20px;
   font-weight: 200;
-  padding: 40px 0;
 }
-.projectsMenu .projectsList {
+.projectsMenu__projectsList {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   -moz-column-gap: 20px;
        column-gap: 20px;
   row-gap: 5px;
 }
-.projectsMenu .projectsList div {
+.projectsMenu__projectsList__element {
   width: 100%;
   position: relative;
 }
-.projectsMenu .projectsList div p {
+.projectsMenu__projectsList__element p {
   position: absolute;
   padding: 10px 20px;
   color: white;
   background-color: black;
   font-size: 15px;
 }
-.projectsMenu .projectsList div img {
+.projectsMenu__projectsList__element img {
   width: 100%;
 }
 
@@ -99,41 +99,45 @@ header div p {
   width: 100%;
   padding: 20px;
 }
-.aboutSection p {
-  padding: 20px 0;
+.aboutSection__header {
+  padding: 40px 0;
   font-size: 20px;
   font-weight: 200;
 }
-.aboutSection .explanation {
+.aboutSection__explanation {
+  padding-bottom: 15px;
   font-size: 15px;
 }
-.aboutSection .aboutList {
-  display: flex;
-  gap: 20px;
+.aboutSection__aboutList {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+  row-gap: 5px;
 }
-.aboutSection .aboutList div {
+.aboutSection__aboutList__element {
   display: flex;
   flex-direction: column;
   width: 100%;
 }
-.aboutSection .aboutList div img {
+.aboutSection__aboutList__element img {
   width: 100%;
 }
-.aboutSection .aboutList div .name {
+.aboutSection__aboutList__element .name {
   padding-top: 10px;
   font-weight: 900;
 }
-.aboutSection .aboutList div .position {
+.aboutSection__aboutList__element .position {
   padding-top: 20px;
   font-size: 15px;
   font-weight: 800;
   color: rgb(144, 142, 142);
 }
-.aboutSection .aboutList div p {
+.aboutSection__aboutList__element p {
   padding: 15px 0px;
   font-size: 15px;
 }
-.aboutSection .aboutList div button {
+.aboutSection__aboutList__element button {
   border: 0px;
   width: 100%;
   height: 30px;
@@ -144,16 +148,16 @@ header div p {
   width: 100%;
   padding: 20px;
 }
-.contactSection .contactHeader {
-  padding: 20px 0;
+.contactSection__header {
+  padding: 40px 0;
   font-size: 20px;
   font-weight: 200;
 }
-.contactSection div {
+.contactSection__list {
   display: flex;
   flex-direction: column;
 }
-.contactSection div input {
+.contactSection__list input {
   margin: 10px 0px;
   border: 1px solid lightgray;
   border-radius: 5px;
@@ -163,25 +167,31 @@ header div p {
 }
 
 @media (max-width: 780px) {
-  .projectsMenu .projectsList {
+  .projectsMenu__projectsList {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    -moz-column-gap: 20px;
+         column-gap: 20px;
   }
-  .aboutSection .aboutList {
+  .aboutSection__aboutList {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    -moz-column-gap: 20px;
+         column-gap: 20px;
   }
 }
 @media (max-width: 480px) {
-  .projectsMenu .projectsList {
+  .projectsMenu__projectsList {
     display: grid;
     grid-template-columns: 1fr;
+    row-gap: 10px;
   }
-  .aboutSection .aboutList {
+  .aboutSection__aboutList {
     display: grid;
     grid-template-columns: 1fr;
+    row-gap: 10px;
   }
-  header div p {
+  .header__logo p {
     display: none;
   }
 }/*# sourceMappingURL=main.css.map */

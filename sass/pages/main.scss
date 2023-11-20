@@ -1,4 +1,6 @@
-//importing variables
+//helper included
+@use "../helpers/mixin" as *;
+//variables included
 @use "../variables/variables" as*;
 
 *{
@@ -13,7 +15,7 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
+    width: $allWidth;
     height: 40px;
     background-color: white;
     box-shadow: 0px 1px 10px 0px rgb(0, 0, 0);
@@ -22,9 +24,9 @@ nav{
         padding-left: 20px;
 
         span{
+            padding: 5px;
             font-weight: 1000;
             font-size: 20;
-            padding: 5px;
         }
     }
 
@@ -43,13 +45,13 @@ nav{
         }
     } 
 }
-header{
+.header{
     position: relative;
-    width: 100%;
+    width: $allWidth;
     height: 700px;
     background: url(/assets/5.jpg) no-repeat center/cover;
     
-    div{
+    &__logo{
         position: absolute;
         top:50%;
         left: 45%;
@@ -74,23 +76,17 @@ header{
     }    
 }
 .projectsMenu{
-    width:100%;
-    padding: 20px;
+   @include centering();
 
-    p{
-        font-size: 20px;
-        font-weight: 200;
-        padding: 40px 0;
-    }
+    &__projectsHeader{
+       @include headerDisplay();
+    } 
 
-    .projectsList{
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        column-gap: 20px;
-        row-gap: 5px;
+    &__projectsList{
+      @include screenBasedOrder($largeSize);
 
-        div{
-            width:100%;
+        &__element {
+            width: $allWidth;
             position: relative;
 
             p{
@@ -102,37 +98,35 @@ header{
             }
 
             img{
-                width: 100%;
+                width: $allWidth;
             }
         }
     }
 }
 
-.aboutSection{
-    width: 100%;
-    padding: 20px;
+.aboutSection {
+    @include centering();
 
-    p {
-        padding: 20px 0;
-        font-size: 20px;
-        font-weight: 200;
+
+    &__header {
+        @include headerDisplay();
     }
 
-    .explanation{
+    &__explanation {
+        padding-bottom: 15px;
         font-size: 15px;
     }
 
-    .aboutList{
-        display: flex;
-        gap: 20px;
+    &__aboutList {
+        @include screenBasedOrder($largeSize);
 
-        div{
+        &__element {
             display: flex;
             flex-direction: column;
-            width:100%;
+            width:$allWidth;
 
             img{
-                width:100%;
+                width: $allWidth;
             }
 
             .name{
@@ -154,7 +148,7 @@ header{
             
             button{
                 border:0px;
-                width: 100%;
+                width: $allWidth;
                 height:30px;
                 background-color: rgb(240, 237, 237);
                 
@@ -163,16 +157,14 @@ header{
     }
 }
 .contactSection{
-    width: 100%;
-    padding: 20px;
+    @include centering();
 
-    .contactHeader{
-        padding: 20px 0;
-        font-size: 20px;
-        font-weight: 200;
+
+    &__header{
+        @include headerDisplay();
     }
 
-    div{
+    &__list{
         display: flex;
         flex-direction: column;
 
@@ -180,44 +172,40 @@ header{
             margin: 10px 0px;
             border: 1px solid lightgray;
             border-radius: 5px;
-            width:100%;
+            width: $allWidth;
             height:40px;
             padding: 0 10px;
         }
     }
 }
-@media (max-width : 780px){
+@media (max-width : $mediomSize){
     .projectsMenu{
-        .projectsList{
-            display: grid;
-            grid-template-columns: 1fr 1fr;
+        &__projectsList{
+            @include screenBasedOrder($mediomSize);
         }
     }
 
     .aboutSection{
-        .aboutList{
-            display: grid;
-            grid-template-columns: 1fr 1fr;
+        &__aboutList{
+            @include screenBasedOrder($mediomSize);
         }
     }
 }
-@media (max-width : 480px){
+@media (max-width : $smallSize){
     .projectsMenu{
-        .projectsList{
-            display: grid;
-            grid-template-columns: 1fr;
+        &__projectsList{
+            @include screenBasedOrder($smallSize);
         }
     }
 
     .aboutSection{
-        .aboutList{
-            display: grid;
-            grid-template-columns: 1fr;
+        &__aboutList{
+            @include screenBasedOrder($smallSize);
         }
     }
 
-    header{
-        div{
+    .header{
+        &__logo{
             p{
             display: none;
             }
