@@ -37,8 +37,10 @@ nav ul li a {
 }
 
 .header {
+  position: relative;
   width: 100%;
   height: 700px;
+  background: url(../assets/5.jpg) no-repeat center/cover;
 }
 .header__logo {
   position: absolute;
@@ -60,13 +62,6 @@ nav ul li a {
   margin-left: 5px;
   font-size: 20px;
   font-weight: 1000;
-}
-.header__background {
-  width: 100%;
-  height: 700px;
-}
-.header__background__image {
-  width: 100%;
 }
 
 .projectsMenu {
