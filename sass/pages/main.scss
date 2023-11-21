@@ -49,7 +49,7 @@ nav{
     position: relative;
     width: $allWidth;
     height: 700px;
-    background: url(/assets/5.jpg) no-repeat center/cover;
+    background: url(../assets/5.jpg) no-repeat center/cover;
     
     &__logo{
         position: absolute;
@@ -74,10 +74,10 @@ nav{
             font-weight: 1000;
         }
     }
-    &__background{
-        width:$allWidth;
-        height: 700px;
-    }    
+    // &__background{
+    //     width:$allWidth;
+    //     height: 700px;
+    // }    
 }
 .projectsMenu{
    @include centering();
