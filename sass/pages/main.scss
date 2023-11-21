@@ -79,6 +79,9 @@ nav{
     &__background{
             width: $allWidth;
             height: 700px;
+            img{
+                width: 100%;
+            }
     }
 }
 .projectsMenu{
