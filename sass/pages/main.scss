@@ -46,10 +46,10 @@ nav{
     } 
 }
 .header{
-    position: relative;
+    //position: relative;
     width: $allWidth;
     height: 700px;
-    background: url(../assets/5.jpg) no-repeat center/cover;
+    //background: url(/assets/5.jpg) no-repeat center/cover;
     
     &__logo{
         position: absolute;
@@ -58,7 +58,7 @@ nav{
         display: flex;
         align-items: center;
         justify-content: space-between;
-
+       
         span{
             opacity: .6;
             padding: 15px;
@@ -73,11 +73,15 @@ nav{
             font-size: 20px;
             font-weight: 1000;
         }
+       
     }
-    // &__background{
-    //     width:$allWidth;
-    //     height: 700px;
-    // }    
+    
+    &__background{
+        img{
+            width: $allWidth;
+            height: 700px;
+        }
+    }
 }
 .projectsMenu{
    @include centering();
