@@ -74,19 +74,18 @@ nav{
             font-size: 20px;
             font-weight: 1000;
         }
-       
     }
 }
 
 .projectsMenu{
-   @include centering();
+    @include centering();
     &__projectsHeader{
-       @include headerDisplay();
+        @include headerDisplay();
     } 
 
-    &__projectsList{
-      @include screenBasedOrder($largeSize);
-
+    .projectsList{
+        @include screenBasedOrder($largeSize);
+    
         &__element {
             width: $allWidth;
             position: relative;
@@ -99,7 +98,6 @@ nav{
                 font-size: 15px;
             }
 
-
             img{
                 width: $allWidth;
             }
@@ -107,6 +105,7 @@ nav{
     }
 }
 
+    
 .aboutSection {
     @include centering();
 
@@ -119,7 +118,7 @@ nav{
         font-size: 15px;
     }
 
-    &__aboutList {
+    .aboutList {
         @include screenBasedOrder($largeSize);
 
         &__element {
