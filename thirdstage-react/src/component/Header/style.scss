@@ -1,0 +1,49 @@
+@use "../varibles.scss"as *;
+
+
+.header {
+        position: relative;
+        height: 700px;
+        background-image: url("./5.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        &__logo {
+            position: absolute;
+            top: 50%;
+            left: 44%;
+            display: flex;
+            align-items: center;
+            gap: 3px ;
+
+            &--bold {
+                padding: 8px 12px 8px 12px;
+                opacity: .6;
+                font-size: 25px;
+                background-color: black;
+                color: white;
+                letter-spacing: 3px;
+            }
+            &--light{
+                font-size: 25px;
+                color: white;
+            }
+        }
+}
+@media (max-width:$mediomSize){
+    .header{
+            height: 400px;
+    }
+}
+@media (max-width:$smallSize){
+    .header{
+            height: 200px;
+
+        &__logo{
+            &--light{
+                display: none;
+            }
+        }
+    }
+}

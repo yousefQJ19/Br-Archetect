@@ -1,0 +1,26 @@
+
+.contact {
+        padding: 20px;
+
+    &__header {
+        padding: 40px 0px;
+        font-size: 20px;
+        font-weight: 400px;
+    }
+
+    &__greeting {
+        padding: 10px 0px;
+    }
+    
+    &__form{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+    }
+    &__submit{
+        padding: 10px 5px;
+        background-color: black;
+        color:white;
+        margin-top: 20px;
+    }
+}
