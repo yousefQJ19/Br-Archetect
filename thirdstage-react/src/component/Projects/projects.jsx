@@ -19,7 +19,8 @@ function Projects() {
             <p className="projects__header">Projects</p>
             <div className="projects__list">
                 {images.map((img, index) => (
-                    <Card imgSource={img} key={index} />
+                    <Card   imgSource={img} 
+                            key={index} />
                 ))}
             </div>
         </div>

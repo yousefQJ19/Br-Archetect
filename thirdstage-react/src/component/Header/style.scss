@@ -1,6 +1,5 @@
 @use "../varibles.scss"as *;
 
-
 .header {
         position: relative;
         height: 700px;
@@ -25,7 +24,8 @@
                 color: white;
                 letter-spacing: 3px;
             }
-            &--light{
+
+            &--light {
                 font-size: 25px;
                 color: white;
             }
@@ -41,6 +41,7 @@
             height: 200px;
 
         &__logo{
+
             &--light{
                 display: none;
             }

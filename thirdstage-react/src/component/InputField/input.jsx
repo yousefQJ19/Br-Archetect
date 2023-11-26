@@ -8,7 +8,7 @@ function Input({placeHolder}){
         <input type="text" 
                placeholder={placeHolder}
                className="inputField"
-               />
+        />
     )
     
 }

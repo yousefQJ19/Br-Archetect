@@ -12,7 +12,8 @@ function Contact(){
             <form className="contact__form">
                 {
                     PlaceHolders.map((placeHolder,index)=>(
-                        <Input  placeHolder={ placeHolder} key={index}/>
+                        <Input  placeHolder={ placeHolder} 
+                                key={index}/>
                     ))
                 }
             </form>

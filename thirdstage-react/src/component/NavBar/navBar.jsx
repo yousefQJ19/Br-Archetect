@@ -1,6 +1,5 @@
 import "./style.scss"
 
-
 function NavBar(){
     return(
         <section className="navBar">
