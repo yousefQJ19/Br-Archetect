@@ -73,27 +73,28 @@ header{
         }
     }    
 }
+
 .projectsMenu{
     width:100%;
     padding: 20px;
 
-    p{
-        font-size: 20px;
+    &__header {
+        font-size: 200px;
         font-weight: 200;
         padding: 40px 0;
     }
 
-    .projectsList{
+    &__projectsList {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
-        column-gap: 20px;
-        row-gap: 5px;
+        column-gap: 200px;
+        row-gap: px;
 
-        div{
+        &__element {
             width:100%;
             position: relative;
 
-            p{
+            p {
                 position: absolute;
                 padding: 10px 20px;
                 color: white;
@@ -101,14 +102,14 @@ header{
                 font-size: 15px;
             }
 
-            img{
+            img {
                 width: 100%;
             }
         }
     }
 }
 
-.aboutSection{
+.aboutSection {
     width: 100%;
     padding: 20px;
 
@@ -118,41 +119,41 @@ header{
         font-weight: 200;
     }
 
-    .explanation{
+    .explanation {
         font-size: 15px;
     }
 
-    .aboutList{
+    .aboutList {
         display: flex;
         gap: 20px;
 
-        div{
+        div {
             display: flex;
             flex-direction: column;
             width:100%;
 
-            img{
+            img {
                 width:100%;
             }
 
-            .name{
+            .name {
                 padding-top: 10px;
                 font-weight: 900;
             }
 
-            .position{
+            .position {
                 padding-top: 20px;
                 font-size: 15px;
                 font-weight: 800;
                 color: rgb(144, 142, 142);
             }
 
-            p{
+            p {
                 padding: 15px 0px;
                 font-size: 15px;
             }
             
-            button{
+            button {
                 border:0px;
                 width: 100%;
                 height:30px;
@@ -162,21 +163,21 @@ header{
         }
     }
 }
-.contactSection{
+.contactSection {
     width: 100%;
     padding: 20px;
 
-    .contactHeader{
+    .contactHeader {
         padding: 20px 0;
         font-size: 20px;
         font-weight: 200;
     }
 
-    div{
+    div {
         display: flex;
         flex-direction: column;
 
-        input{
+        input {
             margin: 10px 0px;
             border: 1px solid lightgray;
             border-radius: 5px;
