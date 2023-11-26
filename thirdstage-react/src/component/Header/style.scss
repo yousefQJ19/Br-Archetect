@@ -32,15 +32,16 @@
         }
 }
 @media (max-width:$mediomSize){
-    .header{
-            height: 400px;
+
+    .header {
+        height: 400px;
     }
 }
 @media (max-width:$smallSize){
-    .header{
-            height: 200px;
+    .header {
+        height: 200px;
 
-        &__logo{
+        &__logo {
 
             &--light{
                 display: none;
