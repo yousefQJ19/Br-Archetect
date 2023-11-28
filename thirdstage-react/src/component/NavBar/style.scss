@@ -9,13 +9,18 @@
     padding: 10px 0;
     background-color: white;
     box-shadow: 1px 1px 10px 1px black;
-    
-    &__logo {
-        span{
-            font-weight: 1000;
-            padding-left: 10px;
+
+    &__link{
+        text-decoration: none;
+        color: #000;
+        &__logo {
+            span{
+                font-weight: 1000;
+                padding-left: 10px;
+            }
         }
     }
+    
 
     &__list {
         display: flex;
