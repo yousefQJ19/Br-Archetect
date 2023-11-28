@@ -2,14 +2,15 @@
 /* eslint-disable no-unused-vars */
 import"./inputStyle.scss"
 
-function Input({placeHolder}){
+function Input({type,placeHolder}){
 
     return(
-        <input type="text" 
+        <input type={type}
                placeholder={placeHolder}
                className="inputField"
         />
     )
     
 }
+
 export default Input;

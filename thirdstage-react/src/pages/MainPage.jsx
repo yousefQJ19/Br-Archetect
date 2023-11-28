@@ -1,19 +1,17 @@
 import NavBar from "../component/NavBar/navBar" ;
-// import Header from"../component/Header/header"
-// import Projects from "../component/Projects/projects";
-// import About from "../component/About/about"
-// import Contact from "../component/Contact/contact";
-function MainPage(){
-        return(
+import Header from"../component/Header/header"
+import Projects from "../component/Projects/projects";
+import About from "../component/About/about"
+import Contact from "../component/Contact/contact";
+
+const MainPage=()=>(
         <div>
                 <NavBar/>
-                <h1>iofwmeiofmeoifnm</h1>
-                {/* <Header/>
+                <Header/>
                 <Projects/>
                 <About/>
-                <Contact/> */}
+                <Contact/>
         </div>
-        )
-}
+)
 
 export default MainPage;

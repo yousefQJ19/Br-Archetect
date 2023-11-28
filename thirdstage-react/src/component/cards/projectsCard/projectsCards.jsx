@@ -4,14 +4,15 @@ import "./projectsCardStyle.scss"
 
 
 
-function Card({imgSource}){
-        return(
-            <div className="projects__list__card">
-                <span>summer house</span>
-                <img src={imgSource} 
-                     alt="summer house" />
-            </div>
-        )
-}
+const Card=({houseType,imgSource})=>(
+    <div className="projects__list__card">
+        <span>
+            {houseType}
+            </span>
+        <img src={imgSource} 
+            alt={houseType}/>
+    </div>
+)
+
 
 export default Card;

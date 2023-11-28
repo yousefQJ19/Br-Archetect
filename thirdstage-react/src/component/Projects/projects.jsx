@@ -1,15 +1,15 @@
 import "./style.scss";
 import Card from "../cards/projectsCard/projectsCards";
 
-const images = [
-    "1.jpg",
-    "2.jpg",
-    "3.jpg",
-    "4.jpg",
-    "1.jpg",
-    "2.jpg",
-    "3.jpg",
-    "4.jpg",
+const housesData = [
+    {houseType:"Summer house",imgSource:"1.jpg"},
+    {houseType:"Bric House",imgSource:"2.jpg"},
+    {houseType:"Renovated",imgSource:"3.jpg"},
+    {houseType:"Barn House",imgSource:"4.jpg"},
+    {houseType:"Summer house",imgSource:"2.jpg"},
+    {houseType:"Bric House",imgSource:"1.jpg"},
+    {houseType:"Renovated",imgSource:"3.jpg"},
+    {houseType:"Barn House",imgSource:"4.jpg"},
 ];
 
 function Projects() {
@@ -18,9 +18,10 @@ function Projects() {
              className="projects">
             <p className="projects__header">Projects</p>
             <div className="projects__list">
-                {images.map((img, index) => (
-                    <Card   imgSource={img} 
-                            key={index} />
+                {
+                housesData.map((data, index) => (
+                    <Card {...data}
+                          key={index} />
                 ))}
             </div>
         </div>
