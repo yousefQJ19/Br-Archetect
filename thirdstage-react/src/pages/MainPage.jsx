@@ -14,7 +14,6 @@ function MainPage(){
                 <Contact/> */}
         </div>
         )
-        
 }
 
 export default MainPage;
