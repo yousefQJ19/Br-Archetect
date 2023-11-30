@@ -8,9 +8,9 @@ const Card=({houseType,imgSource})=>(
     <div className="projects__list__card">
         <span>
             {houseType}
-            </span>
+        </span>
         <img src={imgSource} 
-            alt={houseType}/>
+             alt={houseType}/>
     </div>
 )
 

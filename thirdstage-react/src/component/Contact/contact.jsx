@@ -1,6 +1,24 @@
 import Input from "../InputField/input"
 import "./contactStyle.scss"
-const inputsField=[{placeHolder:"Name",type:"text"},{placeHolder:"Email",type:"email"},{placeHolder:"supject",type:"text"},{placeHolder:"Comment",type:"text"}]
+
+const inputsField=[
+        {
+            placeHolder:"Name",
+            type:"text"
+        },
+        {
+            placeHolder:"Email",
+            type:"email"
+        },
+        {
+            placeHolder:"supject",
+            type:"text"
+        },
+        {
+            placeHolder:"Comment",
+            type:"text"
+        }
+]
 
 function Contact(){
 
@@ -19,7 +37,6 @@ function Contact(){
                 }
                 <button className="contact__form__submit">SEND MASSAGE</button>
             </form>
-            
         </div>
     )
 }

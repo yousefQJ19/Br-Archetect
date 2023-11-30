@@ -6,12 +6,18 @@ const  Card=({name,position,description,imageSource})=>(
             <img src={imageSource} 
                  alt="founders"
                  className="card__image" />
-            <span className="card__name">{name}</span>
-            <span className="card__position">{position}</span>
+            <span className="card__name">
+                {name}
+            </span>
+            <span className="card__position">
+                {position}
+            </span>
             <p className="card__description">
                 {description}
             </p>
-            <button className="card__button">Contact</button>
+            <button className="card__button">
+                Contact
+            </button>
         </div>
 )
 
