@@ -1,0 +1,32 @@
+//centaring a div 
+@mixin centering(){
+    width:100%;
+    padding: 20px;
+}
+
+//simullar header attreputs
+@mixin headerDisplay(){
+    padding: 40px 0;
+    font-size: 20px;
+    font-weight: 200;
+}
+
+//alligning elements depinding in the screen size
+@mixin screenBasedOrder($demintion){
+    @if $demintion== 780px{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 20px;
+    }
+    @else if $demintion==480px{
+        display: grid;
+        grid-template-columns: 1fr;
+        row-gap: 10px;
+    }
+    @else{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        column-gap: 20px;
+        row-gap: 5px;
+    }
+}
