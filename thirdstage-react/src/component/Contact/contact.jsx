@@ -3,29 +3,8 @@ import { Field, Form, Formik} from "formik"
 import commentSchema from "../../schemas/BaisicSchema/"
 import Input from "../InputField/input"
 import "./contactStyle.scss"
+import inputsField from "../../Data/ContactSectionData"
 
-const inputsField=[
-        {
-            placeHolder:"Name",
-            name:"name",
-            type:"text"
-        },
-        {
-            placeHolder:"Email",
-            name:"email",
-            type:"email"
-        },
-        {
-            placeHolder:"Supject",
-            name:"subject",
-            type:"text"
-        },
-        {
-            placeHolder:"Comment",
-            name:"comment",
-            type:"text"
-        }
-]
 
 function Contact(){
     return(
@@ -51,9 +30,9 @@ function Contact(){
                         {
                             inputsField.map((input,index)=>(
                                 <Input  placeHolder={ input.placeHolder}
-                                    type={input.type}
-                                    name={input.name}
-                                    key={index}/>
+                                        type={input.type}
+                                        name={input.name}
+                                        key={index}/>
                             ))
                         }
                     <button type="submit" 
