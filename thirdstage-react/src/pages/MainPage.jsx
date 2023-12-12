@@ -5,7 +5,7 @@ import Contact from "../component/Contact/contact";
 const MainPage=()=>(
     <div>
         <Projects/>
-        <About cardsNumber={4}/>
+        <About cardsNumber = {4}/>
         <Contact/>
     </div>
 )
