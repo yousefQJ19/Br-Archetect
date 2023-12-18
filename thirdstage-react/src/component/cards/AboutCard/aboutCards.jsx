@@ -2,20 +2,20 @@
 import "./aboutCardStyle.scss"
 
 const  Card=({name,position,description,imageSource})=>(
-        <div className="card">
-            <img src={imageSource} 
-                 alt="founders"
-                 className="card__image" />
-            <span className="card__name">
+        <div className = "card">
+            <img src = {imageSource} 
+                 alt = "founders"
+                 className = "card__image" />
+            <span className = "card__name">
                 {name}
             </span>
-            <span className="card__position">
+            <span className = "card__position">
                 {position}
             </span>
-            <p className="card__description">
+            <p className = "card__description">
                 {description}
             </p>
-            <button className="card__button">
+            <button className = "card__button">
                 Contact
             </button>
         </div>

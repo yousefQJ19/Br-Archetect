@@ -1,13 +1,13 @@
-import Projects from "../component/Projects/projects";
-import About from "../component/About/about"
-import Contact from "../component/Contact/contact";
+import Projects from "../Containers/Projects/projects";
+import About from "../Containers/About/about"
+import Contact from "../Containers/Contact/contact";
 
 const MainPage=()=>(
-        <div>
-                <Projects/>
-                <About/>
-                <Contact/>
-        </div>
+    <div>
+            <Projects/>
+            <About/>
+            <Contact/>
+    </div>
 )
 
 export default MainPage;

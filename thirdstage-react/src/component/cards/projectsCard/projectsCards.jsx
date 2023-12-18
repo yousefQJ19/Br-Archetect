@@ -5,12 +5,12 @@ import "./projectsCardStyle.scss"
 
 
 const Card=({houseType,imgSource})=>(
-    <div className="projects__list__card">
+    <div className = "projects__list__card">
         <span>
             {houseType}
         </span>
-        <img src={imgSource} 
-             alt={houseType}/>
+        <img src = {imgSource} 
+             alt = {houseType}/>
     </div>
 )
 

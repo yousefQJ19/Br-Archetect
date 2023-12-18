@@ -1,4 +1,4 @@
-@use "../varibles.scss" as*;
+@use "../../General/varibles.scss" as*;
 
 .projects{
         padding: 20px;
@@ -16,7 +16,6 @@
             row-gap: 10px;
         }
 }
-
 
 @media(max-width:$mediomSize){
     .projects{
