@@ -1,5 +1,5 @@
 import "./style.scss";
-import Card from "../cards/projectsCard/projectsCards";
+import Card from "../../component/cards/projectsCard/projectsCards";
 import housesData from "../../Data/ProjectsSectionData"
 
 function Projects() {

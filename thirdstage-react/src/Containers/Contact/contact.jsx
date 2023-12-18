@@ -1,7 +1,7 @@
 /* eslint-disable no-unused-vars */
 import {Form, Formik} from "formik"
 import commentSchema from "../../schemas/BaisicSchema/"
-import Input from "../InputField/input"
+import Input from "../../component/InputField/input"
 import inputsField from "../../Data/ContactSectionData"
 import "./contactStyle.scss"
 

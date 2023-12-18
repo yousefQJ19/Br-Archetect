@@ -6,9 +6,9 @@ import {
 }from "react-router-dom"
 import MainPage from "../pages/MainPage";
 import RootLayout from "../Layout/layout"
-import Projects from "../component/Projects/projects";
-import Contact from "../component/Contact/contact";
-import About from "../component/About/about";
+import Projects from "../Containers/Projects/projects";
+import Contact from "../Containers/Contact/contact";
+import About from "../Containers/About/about";
 
 const router= createBrowserRouter(
     createRoutesFromElements(

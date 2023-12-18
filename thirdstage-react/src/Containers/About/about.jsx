@@ -2,28 +2,37 @@
 /* eslint-disable no-unused-vars */
 import { useState,useEffect } from "react";
 import axios from 'axios';
-import Card from "../cards/AboutCard/aboutCards";
+//INTERNAL COPMPONENT
+import Card from "../../component/cards/AboutCard/aboutCards";
+//STYLE FILE
 import "./aboutStyle.scss";
-import image from "../../../public/7.jpg"
+import image from "/7.jpg"
 
-const description="Phasellus eget enim eu lectus raucibus vestibulum. Suspendisse sodales pellentesque elementum"
 
 function About({cardsNumber}){
+    const description = "Phasellus eget enim eu lectus raucibus vestibulum. Suspendisse sodales pellentesque elementum";
     const [cardData, setData] = useState([]);
-        useEffect(() => {
-            const fetchData = async () => {
-                try {
-                    const response = await axios.get('https://gorest.co.in/public-api/users');
-                    setData(response.data);
-                } catch (error) {
-                    console.error('Error fetching data:', error);
-                }
-            };
+
+    useEffect(() => {
+        const fetchData = async () => {
+            try {
+                const response = await axios.get('https://gorest.co.in/public-api/users');
+                setData(response.data);
+            } catch (error) {
+                console.error('Error fetching data:', error);
+            }
+        };
         fetchData();
-},[]);
+    }, []);
+
+    let counter=0
     let displayData=cardData.data || []
+
     if(cardsNumber === 4){
         displayData = displayData.slice(0,4)
+    }
+    else{
+        displayData = displayData.slice(counter,counter+=8)
     }
     return(
         <div id = "About" 
