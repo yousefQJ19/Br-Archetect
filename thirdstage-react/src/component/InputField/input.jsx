@@ -4,14 +4,14 @@ import { ErrorMessage, Field } from "formik";
 import"./inputStyle.scss"
 
 function Input({type,placeHolder,name}){
-
     return(
         <>
-        <Field type = {type}
-               name = {name}
-               className = "inputField"
-               placeholder = {placeHolder}/>
-        <ErrorMessage name = {name} component = "div" />
+            <Field type = {type}
+                   name = {name}
+                   className = "inputField"
+                   placeholder = {placeHolder}/>
+            <ErrorMessage name = {name}
+                          component = "div" />
         </>
     )
 }

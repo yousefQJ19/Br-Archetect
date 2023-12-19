@@ -1,7 +1,6 @@
 import "./style.scss";
-import Card from "../../component/cards/projectsCard/projectsCards"
-import housesData from "../../Data/ProjectsData";
-
+import Card from "../../component/cards/projectsCard/projectsCards";
+import housesData from "../../Data/ProjectsSectionData"
 
 function Projects() {
     return (
@@ -10,10 +9,11 @@ function Projects() {
             <p className = "projects__header">Projects</p>
             <div className = "projects__list">
                 {
-                housesData.map((data, index) => (
-                    <Card {...data}
-                          key = {index} />
-                ))}
+                    housesData.map((data, index) => (
+                        <Card {...data}
+                            key = {index} />
+                    ))
+                }
             </div>
         </div>
     );

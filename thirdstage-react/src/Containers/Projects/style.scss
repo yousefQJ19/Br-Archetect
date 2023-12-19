@@ -1,4 +1,5 @@
-@use "../../General/varibles.scss" as*;
+
+@use "../../component/General/varibles.scss" as*;
 
 .projects{
         padding: 20px;
@@ -19,6 +20,7 @@
 
 @media(max-width:$mediomSize){
     .projects{
+
         &__list{
             grid-template-columns: 1fr 1fr;
         }

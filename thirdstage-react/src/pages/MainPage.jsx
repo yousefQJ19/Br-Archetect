@@ -4,9 +4,9 @@ import Contact from "../Containers/Contact/contact";
 
 const MainPage=()=>(
     <div>
-            <Projects/>
-            <About/>
-            <Contact/>
+        <Projects/>
+        <About cardsNumber = {4}/>
+        <Contact/>
     </div>
 )
 
