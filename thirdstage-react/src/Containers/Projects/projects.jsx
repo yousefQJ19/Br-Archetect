@@ -9,10 +9,11 @@ function Projects() {
             <p className = "projects__header">Projects</p>
             <div className = "projects__list">
                 {
-                housesData.map((data, index) => (
-                    <Card {...data}
-                          key={index} />
-                ))}
+                    housesData.map((data, index) => (
+                        <Card {...data}
+                            key={index} />
+                    ))
+                }
             </div>
         </div>
     );

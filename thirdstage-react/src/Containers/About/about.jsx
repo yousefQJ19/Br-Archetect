@@ -25,14 +25,13 @@ function About({cardsNumber}){
         fetchData();
     }, []);
 
-    let counter=0
     let displayData=cardData.data || []
 
     if(cardsNumber === 4){
         displayData = displayData.slice(0,4)
     }
     else{
-        displayData = displayData.slice(counter,counter+=8)
+        displayData = displayData.slice(0,8)
     }
     return(
         <div id = "About" 

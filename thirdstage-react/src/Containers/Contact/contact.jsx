@@ -17,13 +17,13 @@ function Contact(){
                 email: '',
                 subject: '',
                 comment:'',
-            }}
+                }}
                 validationSchema = {commentSchema}
                 onSubmit = {(values, actions) => {
                     actions.resetForm()
                     actions.setStatus("Done")
                 }}
-                >
+            >
                 {({ isSubmitting,status}) => (
                     <Form className = "contact__form">
                         {
@@ -34,11 +34,11 @@ function Contact(){
                                         key = {index}/>
                             ))
                         }
-                    <button type = "submit" 
+                        <button type = "submit" 
                             disabled = {isSubmitting}
                             className = "contact__form__submit">
-                        Submit
-                    </button>
+                                Submit
+                        </button>
                     {status ? (<div>{status}</div>) : null}
                     </Form>
                 )}
