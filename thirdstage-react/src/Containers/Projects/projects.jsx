@@ -11,7 +11,7 @@ function Projects() {
                 {
                     housesData.map((data, index) => (
                         <Card {...data}
-                            key={index} />
+                            key = {index} />
                     ))
                 }
             </div>

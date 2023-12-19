@@ -1,12 +1,12 @@
 /* eslint-disable react/prop-types */
 import "./aboutCardStyle.scss"
 
-const  Card = ({name,position,description,imageSource})=>(
+const  Card = ({name,position,description,imageSource}) => (
     <div className = "card">
         <img src = {imageSource} 
              alt = "founders"
              className = "card__image" />
-        <span className="card__name">
+        <span className = "card__name">
             {name}
         </span>
         <span className = "card__position">

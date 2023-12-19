@@ -1,3 +1,4 @@
+
 /* eslint-disable react/prop-types */
 /* eslint-disable no-unused-vars */
 import { useState,useEffect } from "react";
@@ -7,7 +8,6 @@ import Card from "../../component/cards/AboutCard/aboutCards";
 //STYLE FILE
 import "./aboutStyle.scss";
 import image from "/7.jpg"
-
 
 function About({cardsNumber}){
     const description = "Phasellus eget enim eu lectus raucibus vestibulum. Suspendisse sodales pellentesque elementum";
@@ -33,6 +33,7 @@ function About({cardsNumber}){
     else{
         displayData = displayData.slice(0,8)
     }
+  
     return(
         <div id = "About" 
              className = "about">

@@ -1,3 +1,4 @@
+
 @use "../../component/General/varibles.scss" as*;
 
 .projects{
@@ -19,7 +20,7 @@
 
 @media(max-width:$mediomSize){
     .projects{
-        
+
         &__list{
             grid-template-columns: 1fr 1fr;
         }

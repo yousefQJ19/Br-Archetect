@@ -4,7 +4,7 @@ import "./style.scss"
 function NavBar(){
     return(
         <section className = "navBar">
-            <NavLink className = "navBar__link" to="/">
+            <NavLink className = "navBar__link" to = "/">
                 <p className = "navBar__link__logo">
                     <span>
                         BR

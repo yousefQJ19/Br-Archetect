@@ -1,4 +1,5 @@
 /* eslint-disable no-unused-vars */
+
 import {Form, Formik} from "formik"
 import commentSchema from "../../schemas/BaisicSchema/"
 import Input from "../../component/InputField/input"
@@ -28,17 +29,19 @@ function Contact(){
                     <Form className = "contact__form">
                         {
                             inputsField.map((input,index)=>(
-                                <Input  placeHolder = { input.placeHolder}
-                                        type = {input.type}
-                                        name = {input.name}
-                                        key = {index}/>
+                                <Input placeHolder = { input.placeHolder}
+                                       type = {input.type}
+                                       name = {input.name}
+                                       key = {index}
+                                />
                             ))
                         }
-                        <button type = "submit" 
+                    <button type="submit" 
                             disabled = {isSubmitting}
                             className = "contact__form__submit">
-                                Submit
-                        </button>
+                        Submit
+                    </button>
+
                     {status ? (<div>{status}</div>) : null}
                     </Form>
                 )}

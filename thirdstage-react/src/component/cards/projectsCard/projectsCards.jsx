@@ -1,8 +1,5 @@
 /* eslint-disable react/prop-types */
-
 import "./projectsCardStyle.scss"
-
-
 
 const Card = ({houseType,imgSource})=>(
     <div className = "projects__list__card">
