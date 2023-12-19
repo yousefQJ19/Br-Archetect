@@ -1,0 +1,81 @@
+# Dependency directories
+node_modules/
+/.pnp/
+.pnp.js
+
+# Built files
+build/
+dist/
+*.bundle.js
+*.chunk.js
+*.css
+
+# Coverage directory
+coverage/
+
+# .env file
+.env
+
+# OS or Editor specific files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Editor directories
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Jest coverage
+coverage/
+
+# Next.js build output
+.next/
+out/
+
+# Nuxt.js build / generate output
+.nuxt/
+dist/
+
+# Vue.js build / dist directory
+/dist/
+
+# Yarn
+yarn-error.log
+
+# Parcel
+.cache/
+
+# Meteor
+/local/
+/.meteor/
+/.idea/
+
+# Typescript
+*.tsbuildinfo
+
+# Create React App
+/node_modules/
+/node_modules/
+.DS_Store
+build/
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# User-specific files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*

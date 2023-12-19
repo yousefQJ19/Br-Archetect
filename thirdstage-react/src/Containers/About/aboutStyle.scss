@@ -1,0 +1,36 @@
+@use "../../General/varibles.scss" as *;
+
+.about {
+    width: 100%;
+    padding: 20px;
+
+    &__header {
+        font-size: 20px;
+        font-weight: 200px;
+        padding: 40px 0px;
+    }
+    
+    &__list {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        column-gap: 15px;
+    }
+}
+
+@media(max-width :$mediomSize){
+    .about {
+        &__list{
+            grid-template-columns: 1fr 1fr;
+            column-gap: 15px;
+            row-gap: 10px;
+        }
+    }
+}
+@media(max-width:$smallSize){
+    .about {
+        &__list{
+            grid-template-columns: 1fr;
+            row-gap: 10px;
+        }
+    }
+}
