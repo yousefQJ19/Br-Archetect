@@ -18,7 +18,7 @@ import About from "../Containers/About/about";
 const router= createBrowserRouter(
     createRoutesFromElements(
         <Route path = "/" element={<RootLayout/>}>
-                <Route index elemen={<MainPage/>}/>
+                <Route index element={<MainPage/>}/>
                 <Route path="Projects" element={<Projects/>}/>
                 <Route path="About" element={<About cardsNumber={1}/>}/>
                 <Route path="Contact" element={<Contact/>}/>
