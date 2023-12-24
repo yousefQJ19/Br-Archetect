@@ -1,56 +1,50 @@
-
 /* eslint-disable react/prop-types */
-/* eslint-disable no-unused-vars */
-import { useState,useEffect } from "react";
-import axios from 'axios';
-//INTERNAL COPMPONENT
-import Card from "../../component/cards/AboutCard/aboutCards";
-//STYLE FILE
-import "./aboutStyle.scss";
-import image from "/7.jpg"
+import  { useState } from 'react';
+import Card from '../../component/cards/AboutCard/aboutCards';
+import './aboutStyle.scss';
+import image from '/7.jpg';
+import { Pagination } from '@mui/material';
+import { useFetchData } from './useFetchData';
 
-function About({cardsNumber}){
-    const description = "Phasellus eget enim eu lectus raucibus vestibulum. Suspendisse sodales pellentesque elementum";
-    const [cardData, setData] = useState([]);
+const DESCRIPTION = "Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum";
 
-    useEffect(() => {
-        const fetchData = async () => {
-            try {
-                const response = await axios.get('https://gorest.co.in/public-api/users');
-                setData(response.data);
-            } catch (error) {
-                console.error('Error fetching data:', error);
-            }
-        };
-        fetchData();
-    }, []);
-
-    let displayData=cardData.data || []
-
-    if(cardsNumber === 4){
-        displayData = displayData.slice(0,4)
+function About({ cardsInPage }) {   
+    
+    const [page, setPage] = useState(1);
+    const { data: cardData, error } = useFetchData(`https://gorest.co.in/public-api/users?page=${page}&&per_page=${cardsInPage}`);
+    
+    const handleChange = (event, value) => {
+        setPage(value);
+    };
+    
+    const paginationLength = cardData.meta?.pagination?.pages ;
+    const displayData = cardData.data || [];
+    
+    if (error) {
+        return <p>Error loading data</p>;
     }
-    else{
-        displayData = displayData.slice(0,8)
-    }
-  
-    return(
-        <div id = "About" 
-             className = "about">
-            <p className = "about__header">About</p>
-            <div className = "about__list">
-                {
-                    displayData.map((aboutCard,index) => (
-                        <Card name = {aboutCard.name}
-                              position = {aboutCard.status}
-                              description = {description}
-                              imageSource = {image}
-                              key = {index}/>
-                    ))
-                }
+
+    return (
+        <div id="About" className="about">
+            <p className="about__header">About</p>
+            <div className="about__list">
+                {displayData.map((aboutCard, index) => (
+                    <Card
+                        description={DESCRIPTION}
+                        name={aboutCard.name}
+                        position={aboutCard.status}
+                        imageSource={image}
+                        key={index}
+                    />
+                ))}
+            
             </div>
+            {cardsInPage !== 4&&
+                    <div className='about__pagination'>
+                        <Pagination count={paginationLength} page={page} onChange={handleChange} />
+                    </div>
+            }
         </div>
-    )
+    );
 }
-
 export default About;

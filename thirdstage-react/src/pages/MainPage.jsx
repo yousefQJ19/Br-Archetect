@@ -5,7 +5,7 @@ import Contact from "../Containers/Contact/contact";
 const MainPage=()=>(
     <div>
         <Projects/>
-        <About cardsNumber = {4}/>
+        <About cardsInPage = {4}/>
         <Contact/>
     </div>
 )
