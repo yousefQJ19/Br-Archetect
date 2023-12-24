@@ -1,10 +1,13 @@
 /* eslint-disable react/prop-types */
 import  { useState } from 'react';
-import Card from '../../component/cards/AboutCard/aboutCards';
-import './aboutStyle.scss';
-import image from '/7.jpg';
 import { Pagination } from '@mui/material';
 import { useFetchData } from './useFetchData';
+//importing about page card
+import Card from '../../component/cards/AboutCard/aboutCards';
+//including style
+import './aboutStyle.scss';
+//importing the photo 
+import image from '/7.jpg';
 
 const DESCRIPTION = "Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum";
 
@@ -39,9 +42,11 @@ function About({ cardsInPage }) {
                 ))}
             
             </div>
-            {cardsInPage !== 4&&
+            {cardsInPage !== 4 &&
                     <div className='about__pagination'>
-                        <Pagination count={paginationLength} page={page} onChange={handleChange} />
+                        <Pagination count={paginationLength} 
+                                    page={page} 
+                                    onChange={handleChange} />
                     </div>
             }
         </div>
